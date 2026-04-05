@@ -39,8 +39,7 @@ Follow these steps to run the project locally.
 
 Open terminal and run:
 
-git clone https://github.com/your-username/finance-dashboard-backend.git
-cd finance-dashboard-backend
+git clone
 
 ---
 
@@ -48,8 +47,8 @@ cd finance-dashboard-backend
 
 Open using:
 
-IntelliJ IDEA (Recommended)
-Eclipse
+IntelliJ IDEA 
+Eclipse(Recommended)
 VS Code
 
 Wait until Maven dependencies download.
@@ -126,7 +125,7 @@ http://localhost:8080
 
 # 🔐 Step 1 — Login (Generate JWT)
 
-POST /api/auth/login
+POST /api/auth/login or ( POST http://localhost:8080/api/auth/login -->this for Full API Example)
 
 Body:
 
@@ -187,7 +186,7 @@ GET /api/users
 
 # 💰 Step 5 — Create Financial Record
 
-POST /api/records/{userId}
+POST /api/records/user/{userId}
 
 Example:
 
@@ -199,11 +198,19 @@ Example:
 "description": "Monthly salary"
 }
 
+{
+"amount":1500,
+"type": "EXPENSE",
+"category": "FOOD",
+"date": "2026-04-05",
+"description": "food"
+}
+
 ---
 
 # 📄 Step 6 — Get Records
 
-GET /api/records/{userId}
+GET /api/records/user/{userId}
 
 ---
 
@@ -268,7 +275,7 @@ BE — Electronics and Communication
 Java Full Stack Developer
 
 GitHub:
-https://github.com/your-username
+https://github.com/Shashidhar-Nandi
 
 ---
 
